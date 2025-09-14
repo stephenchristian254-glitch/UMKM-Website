@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="google-site-verification" content="1Nq2OR8MVVeu1TDt7dLd2Q__hCcA5CO93qI8yn0JRu8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocalizeAI - Asisten AI untuk UMKM</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow fixed w-full z-20">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="logo.jpg" alt="LocalizeAI Logo" class="h-10 w-10" data-aos="fade-right">
+        <h1 class="text-2xl font-bold" data-aos="fade-down">LocalizeAI</h1>
+      </div>
+      
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 text-gray-700 font-medium" data-aos="fade-left">
+        <a href="#problem" class="hover:text-blue-600">Masalah</a>
+        <a href="#solusi" class="hover:text-blue-600">Solusi</a>
+        <a href="#fitur" class="hover:text-blue-600">Fitur</a>
+        <a href="#daftar" class="hover:text-blue-600">Daftar</a>
+      </nav>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-7 h-7 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-white shadow-lg absolute top-16 left-0 w-full px-6 py-4 space-y-4">
+      <a href="#problem" class="block text-gray-700 font-medium hover:text-blue-600">Masalah</a>
+      <a href="#solusi" class="block text-gray-700 font-medium hover:text-blue-600">Solusi</a>
+      <a href="#fitur" class="block text-gray-700 font-medium hover:text-blue-600">Fitur</a>
+      <a href="#daftar" class="block text-gray-700 font-medium hover:text-blue-600">Daftar</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="flex flex-col items-center text-center px-6 pt-28 pb-20 bg-gradient-to-b from-blue-600 to-blue-400 text-white">
+    <h2 class="text-4xl md:text-6xl font-bold mb-6" data-aos="fade-down">UMKM Kamu Bisa Terlihat Seperti Brand Besar 🚀</h2>
+    <p class="max-w-2xl text-lg md:text-xl mb-8" data-aos="fade-up">
+      LocalizeAI bikin promosi, chat, dan penjualan jadi lebih gampang. 
+      Tanpa ribet, tanpa mahal.
+    </p>
+    <a href="#daftar" data-aos="zoom-in" class="bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg shadow hover:bg-gray-100 transition">
+      Daftar Gratis Sekarang
+    </a>
+  </section>
+
+  <!-- PROBLEM -->
+  <section id="problem" class="px-6 py-20 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Kenapa Banyak UMKM Sulit Naik Kelas?</h3>
+    <div class="grid md:grid-cols-3 gap-8 text-center">
+      <div class="p-6 bg-white shadow rounded-xl" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-5xl mb-4">😵</p>
+        <p>Susah bikin promosi online yang konsisten.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-xl" data-aos="fade-up" data-aos-delay="200">
+        <p class="text-5xl mb-4">⏰</p>
+        <p>Bingung atur chat pelanggan yang numpuk.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-xl" data-aos="fade-up" data-aos-delay="300">
+        <p class="text-5xl mb-4">💸</p>
+        <p>Gak punya waktu & budget buat hire tim marketing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTION -->
+  <section id="solusi" class="px-6 py-20 bg-blue-50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6" data-aos="fade-down">Di Sini LocalizeAI Hadir ✨</h3>
+      <p class="text-lg mb-10" data-aos="fade-up">Asisten AI khusus UMKM. Bantu kamu promosi, atur pelanggan, sampai kasih insight penjualan.</p>
+      <a href="#daftar" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold shadow hover:bg-blue-700 transition" data-aos="zoom-in">
+        Gabung Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="fitur" class="px-6 py-20 max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Apa yang Bisa LocalizeAI Lakukan?</h3>
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div class="p-6 bg-white shadow rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+        <p class="text-5xl mb-4">🤖</p>
+        <h4 class="font-semibold mb-2">Chatbot Pintar</h4>
+        <p>Balas pelanggan otomatis 24/7 di WhatsApp & IG.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+        <p class="text-5xl mb-4">🌐</p>
+        <h4 class="font-semibold mb-2">Website Instan</h4>
+        <p>Bikin website jualan tanpa ribet coding.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-xl" data-aos="zoom-in" data-aos-delay="300">
+        <p class="text-5xl mb-4">📊</p>
+        <h4 class="font-semibold mb-2">Insight Penjualan</h4>
+        <p>Lihat produk terlaris & laporan real-time.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded-xl" data-aos="zoom-in" data-aos-delay="400">
+        <p class="text-5xl mb-4">🌍</p>
+        <h4 class="font-semibold mb-2">Konten Lokal</h4>
+        <p>AI auto-translate biar produkmu dimengerti semua orang.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section class="px-6 py-20 bg-blue-600 text-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8" data-aos="fade-up">Apa Kata Mereka?</h3>
+      <blockquote class="text-xl italic mb-4" data-aos="fade-right">
+        "Kalau ini beneran jalan, UMKM kita bakal makin naik kelas!"
+      </blockquote>
+      <p data-aos="fade-left">- Beta Tester Pertama</p>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="daftar" class="px-6 py-20 max-w-4xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-6" data-aos="fade-up">Jangan Ketinggalan 🚀</h3>
+    <p class="mb-10" data-aos="fade-down">Jadilah yang pertama cobain LocalizeAI. Gratis untuk early user.</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6FSj_4mOiMBjPbNqj8xNfT1A-lDzI2AWUvStObp0I0IHVZA/viewform?embedded=true" 
+      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" class="shadow rounded-lg" data-aos="zoom-in">
+      Loading…
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-8">
+    <p class="text-sm" data-aos="fade-up">© 2025 LocalizeAI. All rights reserved.</p>
+    <div class="mt-3 space-y-1" data-aos="fade-up" data-aos-delay="200">
+      <p class="text-sm">
+        📧 Email: <a href="mailto:localizesai@gmail.com" class="text-blue-400 hover:underline">
+          localizesai@gmail.com
+        </a>
+      </p>
+      <p class="text-sm">
+        📱 WhatsApp: <a href="https://wa.me/6281291490156" target="_blank" class="text-blue-400 hover:underline">
+          0812-9149-0156
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+
+    // Mobile menu toggle
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+</html>
